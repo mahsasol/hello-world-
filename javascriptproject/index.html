@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- <p id="p1">
+        Hello world!
+    </p> -->
+    <!-- <button onclick='alert("Top learn") '> Click me </button> -->
+    <!-- <p class="li">sina</p>
+    <p>mahsa</p>
+    <p>rana</p>
+    <button onclick="document.write(10+10)"> print </button> -->
+    <div id="gameDiv">
+        <h1 class="gameText" id="playerText">Player</h1>
+        <h1 class="gameText" id="computerText">Computer</h1>
+        <h1 class="gameText" id="resultText">Result</h1>
+
+        <button class="choiceBtns">Rock</button>
+        <button class="choiceBtns">Paper</button>
+        <button class="choiceBtns">Scissors</button>
+    </div>
+</body>
+<script>
+    //alert('Hi sina')
+    //document.getElementById('p1').innerHTML='javascript';
+    //var tagep= document.getElementById('p1');
+    //tagep.innerHTML='goooooood!'
+
+    const playerText = document.querySelector("#playerText")
+    const computerText = document.querySelector("#computerText")
+    const resultText = document.querySelector("#resultText")
+    const choiceBtns = document.querySelector(".choiceBtns")
+
+    let player;
+    let computer;
+    let result;
+
+    // !!!!!
+
+    function computerTurn() {
+        const randNum = Math.floor(Math.random() * 3) + 1;
+        switch (randNum) {
+            case 1:
+                computer = "Rock";
+                break;
+            case 1:
+                computer = "Paper";
+                break;
+            case 1:
+                computer = "Scissors";
+                break;
+        }
+    }
+
+</script>
+
+</html>
